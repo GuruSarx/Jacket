@@ -1,4 +1,14 @@
-#VERSION: 4.0
+###############################################################################
+# load configuration from file
+CONFIG_FILE = 'jackett.json'
+CONFIG_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), CONFIG_FILE)
+CONFIG_DATA = {
+    'api_key': 'o4imhsele8c7lafu5jwxzqlvkjudxmav',  # jackett api
+    'url': 'http://10.0.0.142:25633',  # jackett url
+    'tracker_first': False,          # (False/True) add tracker name to beginning of search result
+    'thread_count': 20,              # number of threads to use for http requests
+
+    #VERSION: 4.0
 # AUTHORS: Diego de las Heras (ngosang@hotmail.es)
 # CONTRIBUTORS: ukharley
 #               hannsen (github.com/hannsen)
